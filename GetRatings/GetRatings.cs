@@ -23,11 +23,10 @@ namespace Company.Function
             ILogger log)
         {
             log.LogInformation("C# HTTP trigger function processed a request.");
-
             List<RatingItem> foundRatingItems = ratingItems.ToList();
             if (foundRatingItems.Count <= 0) 
             {
-                return new NotFoundObjectResult(req);
+                return new NotFoundObjectResult("Could not find any ratings from this user");
             }
             return new OkObjectResult(foundRatingItems);
         }
