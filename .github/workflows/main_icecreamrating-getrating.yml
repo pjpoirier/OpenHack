@@ -39,4 +39,4 @@ jobs:
           app-name: 'IceCreamRating-GetRating'
           slot-name: 'Production'
           package: '${{ env.AZURE_FUNCTIONAPP_PACKAGE_PATH }}/output'
-          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_84A8AB00AF7647DDBB389A4F534ECF21 }}
+          publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_6E42AC5E22C0484589619AFA48179F9D }}
